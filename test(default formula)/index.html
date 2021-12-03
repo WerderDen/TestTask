@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+      
+    <link rel="stylesheet"  href="style.css">
+    <title>Депозитный калькулятор</title>
+      
+            <script src="assets/jquery-3.6.0.min.js"></script>
+      
+      <link href="assets/datepicker.min.css" rel="stylesheet" type="text/css">
+        <script src="assets/datepicker.min.js"></script>
+      
+            <script src="script.js"></script>
+      
+  </head>
+  <body>
+    <header class="HeaderClass">
+        <img src="image/icon.jpg" alt="iq dev" class="TopImageClass">
+        <h1 class="TopTextClass">Deposit Calculator</h1>
+    </header>
+      <div class="ContainerClass">
+          <h1 class="MainTextClass">Депозитный калькулятор</h1>
+          <h2 class = "SubTextClass">Калькулятор депозитов позволяет рассчитать ваши доходы после внесения суммы на счет в банке по опредленному тарифу.</h2>
+          <div class="MainBoxClassRigtRow">
+            <input type='text' class="datepicker-here" data-position="right top" name="Date" placeholder="Дата открытия счёта">
+              <div class="LenghtContainerClass">
+                  <input class="InputLenghtClass" type="number" placeholder="Срок вклада" name="Srok">
+                  <select class="SelectBox">
+                      <option value="mesyats">Месяц</option>
+                      <option value="god">Год</option>
+                </select>
+              </div>
+            
+          </div>
+          <div class="MainBoxClass">
+            <input class="InputClass" type="number"
+                   name="Summ" placeholder="Сумма вклада">
+            <input class="InputClass" type="number" name="Proc" placeholder="Процентная ставка, % годовых">
+          </div>
+           <div class="MainBoxClass">
+               <div class="CheckBoxClass">
+            <input class="CheckBoxInputClass" type="checkbox">
+            <h3 class="CheckBoxTextClass">Ежемесячное пополнение вклада</h3>
+                   </div>
+                <input class="InputClassNumber" type="number" placeholder="Сумма пополнения вклада" name="Popoln">
+          </div>
+          <div class="ButtonContainerClass" >
+           <input type="button" class="ButtonClass" value="Рассчитать">
+          </div>
+         <h2 class="ResultText">Результат Вычислений</h2>
+      </div>
+
+      
+  </body>
+</html>
